@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: product-service
+  data:
+    mongodb:
+        uri: mongodb://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@localhost:27017/${MONGODB_DATABASE}?authSource=admin
+server:
+  port: 5000
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /api-docs
